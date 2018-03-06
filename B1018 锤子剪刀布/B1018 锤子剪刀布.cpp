@@ -68,7 +68,7 @@ int main(){
 	c1 = max(ac);
 	c2 = max(bc);
 	printf("%d %d %d\n",a[0],a[1],a[2]);
-	printf("%d %d %d\n",b[0],b[1],b[3]);
+	printf("%d %d %d\n",b[0],b[1],b[2]);
 	if (c1 == 0) printf("B ");
 	else if (c1 == 1) printf("C ");
 	else printf("J ");
