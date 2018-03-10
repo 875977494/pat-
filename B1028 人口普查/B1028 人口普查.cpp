@@ -31,7 +31,7 @@ int main(){
 	int i;
 	int count = 0;
 	int t = 20140906,tt;
-	int mmax = 0,mmin = 200000;
+	int mmax = 0,mmin = 2000000;
 	for (i = 0;i < N;i++){
 		scanf("%s%d/%d/%d",temp.name,&temp.year,&temp.month,&temp.day);
 		//printf("%s %d %d %d",na,y,m,d);
