@@ -22,7 +22,6 @@ int main(){
 	x = sum / 100;
 	y = (sum - x * 100) / 10;
 	z = sum - x*100 - y*10;
-	printf("%d %d %d %d\n",sum,x,y,z);
 	if (x != 0){
 		printf("%s %s %s",a[x],a[y],a[z]);
 	}
