@@ -55,7 +55,7 @@ int main(){
 		if (HashTable[n[i]] == false) {
 			printf("%d",n[i]);
 			count--;
-			if (count > 1) printf(" ");
+			if (count > 0) printf(" ");
 		}
 		
 	}
