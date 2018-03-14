@@ -20,25 +20,19 @@ int main(){
 	bool HashTable[maxn] = {false};
 	gets(s1);
 	gets(s2);
-	for (int i = 0;s1[i] != '\0';i++){
-		if (s1[i] == '_') continue;
-		if (s1[i] >= 'a' && s1[i] <= 'z') {
-			s1[i] = s1[i] - 32;
-			HashTable[s1[i]] = true;
-			printf("%c ",s1[i]); 
-		}
-	}
+	
 	for (int i = 0;s2[i] != '\0';i++){
-		if (s2[i] == '_') continue;
-		if (s2[i] >= 'a' && s2[i] <= 'z'){
-			
-		}
-		if (HashTable[s2[i]] == false){
-			printf("%c",s2[i]);
-			HashTable[s2[i]] = true;
-		}
-		else continue;
+		if (s2[i] >= 'a' && s2[i] <= 'z') s2[i] = s2[i] - 32;
+		HashTable[s2[i]] = true;
 	}
+	for (int i = 0;s1[i] != '\0';i++){
+		if (s1[i] >= 'a' && s1[i] <= 'z') s1[i] = s1[i] - 32;
+		if (HashTable[s1[i]] == false){
+			printf("%c",s1[i]);
+			HashTable[s1[i]] = true;
+		}
+	}
+	
 	/*puts(s1);
 	puts(s2);*/
 } 
