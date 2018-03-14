@@ -18,10 +18,26 @@ const int maxn = 1000;
 int main(){
 	char s1[100],s2[100];
 	bool HashTable[maxn] = {false};
-	scanf("%s",s1);
-	scanf("%s",s2);
+	gets(s1);
+	gets(s2);
 	for (int i = 0;s1[i] != '\0';i++){
-		
+		if (s1[i] == '_') continue;
+		if (s1[i] >= 'a' && s1[i] <= 'z') {
+			s1[i] = s1[i] - 32;
+			HashTable[s1[i]] = true;
+			printf("%c ",s1[i]); 
+		}
+	}
+	for (int i = 0;s2[i] != '\0';i++){
+		if (s2[i] == '_') continue;
+		if (s2[i] >= 'a' && s2[i] <= 'z'){
+			
+		}
+		if (HashTable[s2[i]] == false){
+			printf("%c",s2[i]);
+			HashTable[s2[i]] = true;
+		}
+		else continue;
 	}
 	/*puts(s1);
 	puts(s2);*/
